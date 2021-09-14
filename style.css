@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 80px;
+  z-index: +1;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 5px 10px #eee9e973;
+          box-shadow: 0px 5px 10px #eee9e973;
+}
+
+.logo {
+  padding-left: 80px;
+  font-size: 27px;
+  font-weight: 450;
+}
+
+.menu {
+  padding-right: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin: 0 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.menu li a {
+  color: #707070;
+  text-decoration: none;
+}
+
+.menu li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+main {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.title-container {
+  height: 212px;
+  width: 500px;
+}
+
+.typography {
+  margin-top: 80px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.typography h1 {
+  line-height: 70px;
+  font-size: 23px;
+  color: #303036;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .typography h1 {
+    font-size: 20px;
+  }
+}
+
+.typography p {
+  color: #303036;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .typography p {
+    font-size: 15px;
+  }
+}
+
+.typography button {
+  border: none;
+  color: white;
+  font-size: 14px;
+  background-color: #595c69;
+  padding: 14px 30px;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.cover-container {
+  background-color: #fff8f2;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 550px;
+  z-index: -1;
+  height: 650px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.cards {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  grid-gap: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cards .card {
+  padding-top: 90px;
+  width: 370px;
+  height: 666px;
+}
+
+@media screen and (max-width: 600px) {
+  .cards .card {
+    width: 100%;
+  }
+}
+
+.cards .card img {
+  height: 450px;
+  width: 370px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.cards .card .padding {
+  padding: 31px 10px 10px 10px;
+}
+
+.cards .card .padding .img-footer {
+  font-size: 12px;
+  color: #9fa1aa;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.cards .card .padding h1 {
+  padding-bottom: 12px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.cards .card .padding p {
+  font-size: 15px;
+}
+
+.popular-recipes .container {
+  padding-top: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popular-recipes .container h {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.popular-recipes .container a {
+  text-decoration: none;
+  color: #595C69;
+}
+
+.sup-cover {
+  margin-top: 90px;
+  background-color: #fff8f2;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 2700px;
+  height: 212px;
+  position: absolute;
+}
+
+.sup-cover .sup-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sup-cover .sup-container button {
+  margin-top: 80px;
+  margin-left: 300px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 56px;
+  width: 273px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  background-color: #FFBF9D;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sup-cover .sup-container .text {
+  width: 600px;
+  margin-left: 80px;
+  margin-top: 70px;
+}
+
+.sup-cover .sup-container .text h1 {
+  font-weight: normal;
+  font-size: 26px;
+}
+
+.sup-cover .sup-container .text p {
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.about {
+  margin-top: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .about-me {
+  margin-left: 96px;
+  margin-top: 90px;
+}
+
+.about .about-me h {
+  font-size: 26px;
+  color: #303036;
+  line-height: 40pt;
+}
+
+.about .about-me .img-footer {
+  font-size: 12px;
+  color: #9FA1AA;
+  margin-bottom: 35px;
+}
+
+.about .about-me p {
+  font-size: 15px;
+  line-height: 20pt;
+}
+
+.about .about-me button {
+  color: white;
+  margin-top: 50px;
+  width: 220px;
+  height: 56px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #595C69;
+  border: none;
+}
+
+footer {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 70px;
+  background-color: #ffffff;
+  height: 100px;
+}
+
+footer .container {
+  color: #9FA1AA;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+footer .container .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+footer .container a {
+  color: #9FA1AA;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
